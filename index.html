@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to center a div by Henry Le</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main id="main">
+        <h1>How to center a div <span style="font-size: .8rem">by Henry Le</span></h1>
+
+        <a id="jump-top" href="#main">Jump to top</a>
+
+        <ol>
+            <li><a href="#margin">Margin</a></li>
+            <li><a href="#text">Text</a></li>
+            <li><a href="#transform">Transform</a></li>
+            <li><a href="#flex">Flex</a></li>
+            <li><a href="#grid">Grid</a></li>
+        </ol>
+
+        <!-- margin tutorial start -->
+        <div id="margin" class="code-example">
+            <article class="code-example-info">
+                <p>Center a div with margin (only horizontal)</p>
+            </article>
+<textarea placeholder="Enter your code" title="code-editor">
+    <style>
+        /* Some styling */
+        #margin .parent {
+            height: 200px;
+        }
+
+        #margin .centered-child {
+            border: 1px solid #00f;
+            width: 50%;
+            min-width: 200px;
+        }
+
+        /* Center with margin */
+        #margin  .centered-child.centered-child--margin {
+            margin-right: auto;
+            margin-left: auto;
+        }
+    </style>
+    <div class="parent parent--margin">
+        <div class="centered-child centered-child--margin">
+            <p>centered div with margin</p>
+        </div>
+    </div>
+</textarea>
+            <section></section>
+        </div>
+        <!-- margin tutorial end -->
+         
+        <!-- text tutorial start -->
+        <div id="text" class="code-example">
+            <article class="code-example-info">
+                <p>Center a div with text alignment (only horizontal)</p>
+            </article>
+<textarea placeholder="Enter your code" title="code-editor">
+    <style>
+        /* Some styling */
+        #text .parent {
+            height: 200px;
+        }
+
+        #text .centered-child {
+            border: 1px solid #00f;
+            width: 50%;
+            min-width: 200px;
+        }
+
+        /* Center with text */
+        #text .parent.parent--text {
+            text-align: center;
+        }
+
+        #text .centered-child.centered-child--text {
+            display: inline-block;
+        }
+    </style>
+    <div class="parent parent--text">
+        <div class="centered-child centered-child--text">
+            <p>centered div with text</p>
+        </div>
+    </div>
+</textarea>
+            <section></section>
+        </div>
+        <!-- text tutorial end -->
+
+        <!-- transform tutorial start -->
+        <div id="transform" class="code-example">
+            <article class="code-example-info">
+                <p>Center a div with transform</p>
+            </article>
+<textarea placeholder="Enter your code" title="code-editor">
+    <style>
+        /* Some styling */
+        #transform .parent {
+            height: 200px;
+        }
+
+        #transform .centered-child {
+            border: 1px solid #00f;
+            width: 50%;
+            min-width: 200px;
+        }
+
+        /* Center with transform */
+        #transform .centered-child.centered-child--transform {
+            transform: translate(-50%, -50%);
+            position: relative; /* also works with absolute and fixed position */
+            top: 50%;
+            left: 50%;
+        }
+    </style>
+    <div class="parent parent--transform">
+        <div class="centered-child centered-child--transform">
+            <p>centered div with transform</p>
+        </div>
+    </div>
+</textarea>
+            <section></section>
+        </div>
+        <!-- transform tutorial end -->
+
+        <!-- flex tutorial start -->
+        <div id="flex" class="code-example">
+            <article class="code-example-info">
+                <p>Center a div with flex</p>
+            </article>
+<textarea placeholder="Enter your code" title="code-editor">
+    <style>
+        /* Some styling */
+        #flex .parent {
+            height: 200px;
+        }
+
+        #flex .centered-child {
+            border: 1px solid #00f;
+            width: 50%;
+            min-width: 200px;
+        }
+
+        /* Center with flex */
+        #flex .parent.parent--flex {
+            display: flex;
+            justify-content: center;    /* center horizontal */
+            align-items: center;        /* center vertical */
+        }
+    </style>
+    <div class="parent parent--flex">
+        <div class="centered-child centered-child--flex">
+            <p>centered div with flex</p>
+        </div>
+    </div>
+</textarea>
+            <section></section>
+        </div>
+        <!-- flex tutorial end -->
+         
+        <!-- grid tutorial start -->
+        <div id="grid" class="code-example">
+            <article class="code-example-info">
+                <p>Center a div with grid</p>
+            </article>
+<textarea placeholder="Enter your code" title="code-editor">
+    <style>
+        /* Some styling */
+        #grid .parent {
+            height: 200px;
+        }
+
+        #grid .centered-child {
+            border: 1px solid #00f;
+            width: 50%;
+            min-width: 200px;
+        }
+
+        /* Center with grid */
+        #grid .parent.parent--grid {
+            display: grid;
+            place-items: center;
+        }
+    </style>
+    <div class="parent parent--grid">
+        <div class="centered-child centered-child--grid">
+            <p>centered div with grid</p>
+        </div>
+    </div>
+</textarea>
+            <section></section>
+        </div>
+        <!-- grid tutorial end -->
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
